@@ -1,8 +1,8 @@
 <template>
   <div
-    class="w-screen h-screen max-h-[300px] max-w-[1080px] font-bold bg-black text-white relative grid grid-cols-12 px-8"
+    class="w-screen h-screen max-h-[200px] max-w-[1920px] font-bold bg-black text-white relative grid grid-cols-12 px-8"
   >
-    <div class="col-span-2 flex items-center">
+    <div class="col-span-2 flex items-center justify-center">
       <transition
         mode="out-in"
         enter-from-class="opacity-0"
@@ -12,18 +12,18 @@
         leave-to-class="opacity-0"
         leave-active-class="transition-opacity duration-1000"
       >
-        <img v-if="switchImg" src="@/assets/img/motoluc.png" />
-        <img v-else src="@/assets/img/logo_vontage.svg" />
+        <img v-if="switchImg" src="@/assets/img/motoluc.png" class="max-h-[150px]" />
+        <img v-else src="@/assets/img/logo_vontage.svg" class="max-h-[150px]" />
       </transition>
     </div>
 
-    <div class="col-span-8 flex items-center justify-center space-x-[4rem] text-7xl">
+    <div class="col-span-8 flex items-center justify-center space-x-[7rem] text-8xl">
       <div class="w-[80px]">{{ hours }}</div>
       <div class="w-[80px]">{{ mins }}</div>
       <div class="w-[80px]">{{ seconds }}</div>
     </div>
 
-    <div class="col-span-2 flex items-center">
+    <div class="col-span-2 flex items-center justify-center">
       <transition
         mode="out-in"
         enter-from-class="opacity-0"
@@ -33,8 +33,8 @@
         leave-to-class="opacity-0"
         leave-active-class="transition-opacity duration-1000"
       >
-        <img v-if="switchImg" src="@/assets/img/logo_vontage.svg" />
-        <img v-else src="@/assets/img/motoluc.png" />
+        <img v-if="switchImg" src="@/assets/img/logo_vontage.svg" class="max-h-[150px]" />
+        <img v-else src="@/assets/img/motoluc.png" class="max-h-[150px]" />
       </transition>
     </div>
   </div>

@@ -1,5 +1,5 @@
 {
-  "name": "clock-widget-vertical-motoluc",
+  "name": "clock-widget-horizontal-motoluc",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -41,8 +41,8 @@
     "vue-tsc": "^1.8.27"
   },
   "vontage": {
-    "description": "FHD Vertical Clock widget",
-    "width": 1080,
-    "height": 300
+    "description": "FHD Horizontal Clock widget",
+    "width": 1920,
+    "height": 200
   }
 }
